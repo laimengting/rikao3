@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>412826199502163528</p>
+	<script>
+		var p = document.querySelector('p');
+		var html = p.innerHTML;
+		function test(arr) {
+			var reg = /\d{4}$/;
+			return arr.replace(reg, '****');
+		}
+		p.innerHTML = test(html);
+	</script>
+</body>
+</html>
